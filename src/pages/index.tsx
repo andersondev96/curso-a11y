@@ -1,5 +1,6 @@
 import "../styles/globals.css";
 
+import Head from "next/head";
 import Image from 'next/image';
 
 import LogoImg from '../assets/logo.svg';
@@ -9,6 +10,9 @@ import styles from '../styles/home.module.css';
 export default function Home() {
   return (
     <>
+      <Head>
+        <title>Desenvolvendo uma web acessível | Rocketseat Blog</title>
+      </Head>
       <header className={styles.header}>
         <Image src={LogoImg} width={286 / 2} alt="Blog da Rocketseat" />
 
@@ -22,9 +26,9 @@ export default function Home() {
       <main>
         <article className={styles.content}>
           <header>
-            <h2>Desenvolvendo uma web acessível</h2>
+            <h1>Desenvolvendo uma web acessível</h1>
 
-            <h4>Protocolos e diretrizes orientam o desenvolvimento de tecnologias acessíveis, mas é preciso olhar para além de tudo isso</h4>
+            <h2>Protocolos e diretrizes orientam o desenvolvimento de tecnologias acessíveis, mas é preciso olhar para além de tudo isso</h2>
 
           </header>
 
